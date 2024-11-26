@@ -22,4 +22,7 @@ export default class Users {
     delete = (id) =>{
         return userModel.findByIdAndDelete(id);
     }
+    async insertMany(doc) {
+        return await userModel.insertMany(doc);  // Insertamos los usuarios en la base de datos
+      }
 }

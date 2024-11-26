@@ -12,5 +12,8 @@ export default class UserRepository extends GenericRepository{
     getUserById = (id) =>{
         return this.getBy({_id:id})
     }
+    async saveMany(data) {
+        return await this.dao.insertMany(data);  // Usamos el DAO para guardar múltiples usuarios
+      }
     
 }

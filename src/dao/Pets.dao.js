@@ -21,4 +21,7 @@ export default class Pet {
     delete = (id) =>{
         return petModel.findByIdAndDelete(id);
     }
+    async insertMany(doc) {
+        return await petModel.insertMany(doc);  // Insertamos las mascotas en la base de datos
+      }
 }

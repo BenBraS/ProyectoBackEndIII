@@ -1,14 +1,14 @@
 import { faker } from '@faker-js/faker';
 import bcrypt from 'bcrypt';
 
-// Función para generar usuarios
+// Función para crear usuarios
 export const generateUsers = async (count) => {
   const users = [];
 
   for (let i = 0; i < count; i++) {
     const role = Math.random() > 0.5 ? 'admin' : 'user'; 
     
-    // Genera la contraseña encriptada
+    //contraseña encriptada
     const passwordHash = await bcrypt.hash('coder123', 10);
 
     users.push({
