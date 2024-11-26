@@ -12,7 +12,7 @@ import mocksRouter from './routes/mocks.router.js';
 dotenv.config(); // Cargar variables de entorno desde .env
 
 const app = express();
-const PORT = process.env.PORT || 8080;
+const PORT = process.env.PORT || 8081;
 const connection = mongoose.connect(process.env.MONGO_URI);
 
 app.use(express.json());
