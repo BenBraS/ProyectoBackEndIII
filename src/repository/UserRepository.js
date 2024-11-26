@@ -13,7 +13,7 @@ export default class UserRepository extends GenericRepository{
         return this.getBy({_id:id})
     }
     async saveMany(data) {
-        return await this.dao.insertMany(data);  // Usamos el DAO para guardar múltiples usuarios
+        return await this.dao.insertMany(data); 
       }
     
 }

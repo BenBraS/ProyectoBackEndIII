@@ -23,6 +23,6 @@ export default class Users {
         return userModel.findByIdAndDelete(id);
     }
     async insertMany(doc) {
-        return await userModel.insertMany(doc);  // Insertamos los usuarios en la base de datos
+        return await userModel.insertMany(doc); 
       }
 }

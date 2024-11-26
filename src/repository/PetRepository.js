@@ -5,6 +5,6 @@ export default class PetRepository extends GenericRepository {
         super(dao);
     }
     async saveMany(pets) {
-        return await this.dao.insertMany(pets);  // Usamos el DAO para guardar múltiples mascotas
+        return await this.dao.insertMany(pets); 
       }
 }
