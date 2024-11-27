@@ -1,4 +1,4 @@
-import { generateMockDataService } from '../services/generateMockData.service.js';
+import { generateMockDataService } from '../services/mocks.service.js';
 
 export const generateMockData = async (req, res) => {
   const { users, pets } = req.body;
